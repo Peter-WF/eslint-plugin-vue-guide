@@ -15,7 +15,7 @@
   "dependencies": {
     "assert": "^1.4.1",
     "requireindex": "~1.1.0",
-    "vue-eslint-parser": "^1.0.0"
+    "vue-eslint-parser": "^1.1.0-7"
   },
   "devDependencies": {
     "assert": "^1.4.1",
