@@ -1,0 +1,14 @@
+/app/logs
+/app/public/views/widget
+/npm-debug.log
+
+node_modules/
+
+.DS_Store
+.idea/
+.vscode/
+
+dist/
+
+.local
+
