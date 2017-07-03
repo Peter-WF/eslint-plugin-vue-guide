@@ -10,7 +10,9 @@
   "author": "wangfeia",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test:base": "mocha \"tests/lib/**/*.js\"",
+    "test:simple": "npm run test:base -- --reporter nyan",
+    "test": "nyc npm run test:base -- \"tests/integrations/*.js\" --timeout 60000"
   },
   "dependencies": {
     "assert": "^1.4.1",
