@@ -1,7 +1,5 @@
 # eslint-plugin-vue-guide
 
-基于 vue-guide
-
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
@@ -43,9 +41,10 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
+* [max-attrs-in-line](./docs/rules/zh-cn/max-attrs-in-line.md)
 
+* [self-closing-tag](./docs/rules/zh-cn/self-closing-tag.md)
 
+* [sort-attrs](./docs/rules/zh-cn/sort-attrs.md)
 
-
-
+* [sort-keys](./docs/rules/zh-cn/sort-keys.md)
