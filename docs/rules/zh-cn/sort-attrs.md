@@ -48,8 +48,8 @@
   max="100"
   min="0"
   step="5"
-  :values="[10, 20]"
   :class="{'is-loading': task.length}"
+  :values="[10, 20]"
   @change="update"
 />
 ```
