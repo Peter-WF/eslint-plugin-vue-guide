@@ -136,7 +136,7 @@ ruleTester.run('sort-keys', rule, {
           mounted() {}
         }
       `,
-      output1: `
+      output: `
         export default {
           name: 'my-template',
           props: {

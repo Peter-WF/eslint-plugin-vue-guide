@@ -33,19 +33,27 @@ ruleTester.run('self-closing-tag', rule, {
     {
       filename: 'test.vue',
       code: '<template><task-detail id="123"/></template>'
+    },
+    {
+      filename: 'test.vue',
+      code: `<template>
+              <task-detail>
+                content
+              </task-detail>
+            </template>`
     }
   ],
   invalid: [
     {
       filename: 'test.vue',
       code: '<template><task-detail></task-detail></template>',
-      output1:'<template><task-detail/></template>',
+      output:'<template><task-detail/></template>',
       errors: ['When there are no subcomponents, please use self-closing tag']
     },
     {
       filename: 'test.vue',
       code: '<template><task-detail id="123"></task-detail></template>',
-      output1:'<template><task-detail id="123"/></template>',
+      output:'<template><task-detail id="123"/></template>',
       errors: ['When there are no subcomponents, please use self-closing tag']
     }
   ],
