@@ -33,10 +33,10 @@ ruleTester.run('sort-attrs', rule, {
           <range-slider 
             v-if="!disabled"
             v-model="task"
-            class="my-template-range-slider"
             max="100"
             min="0"
             step="5"
+            class="my-template-range-slider"
             :class="{'is-loading': task.length}"
             :values="[10, 20]"
             @change="update"
